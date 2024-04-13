@@ -1,13 +1,78 @@
-body {
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue : hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+.body{
+  background: var(--Very-Dark-Blue);
+  height: 100vh;
+}
+.task{
+  color: white;
+}
+img{
+  width: 100vw;
+}
+h1{
+  color:white;
+  margin-bottom: 25px;
+  margin-left: 0%;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top:10%;
+  left: 33%;
+}
+input,li{
+  background-color: var(--Very-Dark-Grayish-Blue);
+  color:white;
+  padding: 15px;
+  width: 400px;
+  border-style: none;
+  text-align: left;
+}
+.button{
+  height: 45px;
+  background-color: red;
+  color:white;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  display: flex;
+  border-radius: 0 0 50% 50%;
+}
+input::placeholder{
+  color: var(--Dark-Grayish-Blue);
+}
+ul{
+  margin-top: 15px;
+  list-style-type: none;
+}
+li{
+  border-bottom: 1px solid var(--Dark-Grayish-Blue);
+  display: flex;
+  align-items: center;
+}
+.delete{
+  border:1px solid var(--Dark-Grayish-Blue);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
